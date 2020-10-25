@@ -1,0 +1,10 @@
+.login {
+    display: flex;
+    justify-content: center;
+}
+
+.titleLogin {
+    font-family: "Arial Rounded MT Bold";
+    font-size: 90%;
+    text-align: center;
+}

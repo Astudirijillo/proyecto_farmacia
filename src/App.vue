@@ -1,18 +1,20 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <Login class="login"></Login>
+    <Home></Home>
+    <Footer></Footer>
   </div>
 </template>
 
 <script>
 /*import HelloWorld from './components/HelloWorld.vue'*/
-import Login from "@/components/Login";
+import Home from "@/components/Home";
+import Footer from "@/components/Footer";
 
 export default {
   name: 'App',
   components: {
-    Login
+    Footer,
+    Home
   }
 }
 </script>
@@ -26,4 +28,5 @@ export default {
   color: #2c3e50;
   margin-top: 60px;
 }
+@import "./assets/css/styles.css";
 </style>

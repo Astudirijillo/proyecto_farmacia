@@ -1,12 +1,12 @@
 <template>
   <div>
-    <h1>Pruebas</h1>
+    <img src="../assets/error_404.png" height="500" width="1000"/>
   </div>
 </template>
 
 <script>
 export default {
-name: "Login"
+name: "ErrorComponent"
 }
 </script>
 
