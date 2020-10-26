@@ -1,20 +1,17 @@
 <template>
   <div id="app">
-    <Home></Home>
+     <router-view></router-view>
     <Footer></Footer>
   </div>
 </template>
 
 <script>
-/*import HelloWorld from './components/HelloWorld.vue'*/
-import Home from "@/components/Home";
-import Footer from "@/components/Footer";
+import Footer from "./components/Footer";
 
 export default {
   name: 'App',
   components: {
     Footer,
-    Home
   }
 }
 </script>
