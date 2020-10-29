@@ -1,6 +1,7 @@
 <template>
   <div>
     <Header></Header>
+    <h1></h1>
     <div class="login">
       <div>
         <img alt="Vue logo" src="../assets/logo_Web.jpg" width="200" height="200">
@@ -10,7 +11,6 @@
         <h2>Sistema de inventario para farmacias locales</h2>
       </div>
     </div>
-
   </div>
 </template>
 

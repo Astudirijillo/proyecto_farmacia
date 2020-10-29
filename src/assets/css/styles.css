@@ -7,6 +7,21 @@
     font-family: "Arial Rounded MT Bold";
     font-size: 90%;
     text-align: center;
+    font-style: italic;
+}
+.accept{
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+}
+
+.users{
+    width: 50%;
+    position: center;
 }
 
 .logo {
@@ -14,7 +29,9 @@
 }
 body {font-family: Arial, Helvetica, sans-serif; margin: 0;}
 form {border: 3px solid #f1f1f1;}
+
 .footer {
+    font-family: "Arial Rounded MT Bold";
     margin-top: 20px;
 }
 .login-form {
@@ -24,14 +41,14 @@ form {border: 3px solid #f1f1f1;}
 }
 .topnav {
     overflow: hidden;
-    background-color: #333;
+    background-color: #089545;
     display: flex;
     justify-content: space-between;
 }
 
 .topnav a {
     float: left;
-    color: #f2f2f2;
+    color: #FFFFFF;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
