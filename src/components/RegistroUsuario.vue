@@ -1,7 +1,7 @@
 <template>
   <div id='registerUsers' class="regUser">
     <Header></Header>
-    <div >
+    <div class="register">
       <form action="../form-result.php" target="_blank">
         <p class="users">
           Nombre <input type="text" name="nombre" required>

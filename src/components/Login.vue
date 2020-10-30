@@ -22,11 +22,11 @@
 <script>
 export default {
   name: 'Login',
-  data() {
-    return { //Este método retorna la información que se quiere mostrar
-      username: 'Ingrese su usuario',
-      pass: 'Ingrese su contraseña'
+    data() {
+      return { //Este método retorna la información que se quiere mostrar
+        username: 'Ingrese su usuario',
+        pass: 'Ingrese su contraseña',
+      }
     }
   }
-}
 </script>

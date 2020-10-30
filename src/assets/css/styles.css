@@ -3,6 +3,12 @@
     justify-content: center;
 }
 
+.register{
+    margin: auto;
+    width: 40%;
+    position: center;
+}
+
 .titleLogin {
     font-family: "Arial Rounded MT Bold";
     font-size: 90%;
@@ -18,12 +24,6 @@
     cursor: pointer;
     width: 20%;
 }
-
-.users{
-    width: 50%;
-    position: center;
-}
-
 .logo {
     margin-top: 20px;
 }
@@ -44,6 +44,7 @@ form {border: 3px solid #f1f1f1;}
     background-color: #089545;
     display: flex;
     justify-content: space-between;
+
 }
 
 .topnav a {
@@ -56,17 +57,11 @@ form {border: 3px solid #f1f1f1;}
 }
 
 .topnav a:hover {
-    background-color: #ddd;
+    background-color: #ADFBD8;
     color: black;
 }
-.active {
-    color: green;
-    background-color: #70BF73;
-}
-.topnav a.active {
-    background-color: #4CAF50;
-    color: white;
-}
+
+
 input[type=text], input[type=password] {
     width: 100%;
     padding: 12px 20px;

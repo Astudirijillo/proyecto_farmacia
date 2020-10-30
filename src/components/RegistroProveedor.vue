@@ -1,7 +1,7 @@
 <template>
   <div>
     <Header></Header>
-    <div>
+    <div class="register">
       <form action="../form-result.php" target="_blank">
         <p class="users">
           Razon Social<input type="text" name="razonSocial">
@@ -9,7 +9,7 @@
           Direccion <input type="text" name="direccion">
           Nro. telefonico <input type="text" name="nroTelefonico">
           Correo Electronico <input type="text" name="correo">
-          <input type="button" @click="ingresarInfo" value="Confirmar">
+          <input type="button" @click="validarInfo" value="Confirmar">
         </p>
       </form>
     </div>
@@ -22,7 +22,7 @@ export default {
 name: "RegistroProveedor",
   components: {Header},
   methods:{
-    ingresarInfo(){
+    validarInfo(){
       alert("Proveedor registrado");
     }
   }
