@@ -34,6 +34,7 @@
             <input type="checkbox" name="simbAsociado">Estupefacientes <br>
             <input type="checkbox" name="simbAsociado">Aportación reducida Seguridad Social <br>
           <input type="button" @click="ingresarInfo" value="Confirmar">
+          <input type="button" value="Resetear">
         </p>
       </form>
     </div>

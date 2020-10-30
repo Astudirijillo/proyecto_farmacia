@@ -8,14 +8,16 @@
           Apellido <input  type="text" name="apellido" required>
           Rut (sin guiones) <input type="text" name="rut" required>
           Numero telefonico <input type="text" name="nroTelefonico" required>
-          Correo electronico <input type="text" name="correo" required>
-          Contraseña <input type="text" name="contraseña" required>
+          Correo electronico <input type="email" id='email' name="correo" required><br>
+          <br>
+          Contraseña <input type="password" name="contraseña" required>
           Perfil de Usuario <br>
             <input type="radio" name="perfilUsuario" value="admin">Administrador
             <input type="radio" name="perfilUsuario" value="productos">Productos
             <input type="radio" name="perfilUsuario" value="productos">Proveedor<br>
           <br>
           <input type="button" @click="validarDatos" value="Confirmar">
+          <input type="button" value="Resetear">
         </p>
       </form>
     </div>
