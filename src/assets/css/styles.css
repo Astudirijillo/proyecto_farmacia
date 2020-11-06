@@ -42,28 +42,59 @@ form {border: 3px solid #f1f1f1;}
     margin: auto;
     text-align: left;
 }
-.topnav {
-    overflow: hidden;
-    background-color: #089545;
-    display: flex;
-    justify-content: space-between;
 
+/* The sidebar menu */
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 160px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #5ccb4e; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+}
+.inicio{
+    text-align: left;
+    background-color: darkgreen;
+}
+.redireccionar{
+    text-align: left;
+    background-color: #60ac05;
 }
 
-.topnav a {
-    float: left;
-    color: #FFFFFF;
-    text-align: center;
-    padding: 14px 16px;
+.cerrar{
+    text-align: left;
+    background-color: #f82342;
+    margin-top: 300px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 6px 8px 6px 16px;
     text-decoration: none;
-    font-size: 17px;
+    font-size: 25px;
+    color: #fafafa;
+    display: block;
 }
 
-.topnav a:hover {
-    background-color: #ADFBD8;
-    color: black;
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+    color: #a1ecb9;
 }
 
+/* Style page content */
+.main {
+    margin-left: 160px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
 
 input[type=text], input[type=password] {
     width: 100%;
@@ -87,6 +118,18 @@ button {
 button:hover {
     opacity: 0.8;
 }
+
+.creUs{
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    position: center;
+}
+
 
 .cancelbtn {
     width: auto;
@@ -122,4 +165,43 @@ span.psw {
     .cancelbtn {
         width: 100%;
     }
+}
+.topnav {
+    overflow: hidden;
+    background-color: #14db74;
+    display: flex;
+    width: auto;
+    margin-left: 550px;
+    margin-right: 400px;
+    justify-content: space-between;
+}
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #dddddd;
+    color: black;
+}
+.active {
+    color: green;
+    background-color: #70BF73;
+}
+
+.table{
+    margin-left: 200px;
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+    border-spacing: 1px;
+}
+
+.infoTabla{
+    text-align: left;
 }

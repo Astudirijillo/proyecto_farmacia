@@ -1,7 +1,8 @@
 <template>
   <div>
-    <Header></Header>
-    <h1></h1>
+    <Sidebar></Sidebar>
+    <br>
+    <br>
     <div class="login">
       <div>
         <img alt="Vue logo" src="../assets/logo_Web.jpg" width="200" height="200">
@@ -15,15 +16,20 @@
 </template>
 
 <script>
-import Header from "@/components/Header";
+import Sidebar from "@/components/Sidebar";
 export default {
   name: "Login",
     components: {
-    Header
+      Sidebar,
   }
 }
 </script>
 
 <style scoped>
+
+</style>
+
+<style type="text/css">
+
 
 </style>

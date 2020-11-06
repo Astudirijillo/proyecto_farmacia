@@ -1,6 +1,8 @@
 <template>
   <div>
-    <Header></Header>
+    <sidebar></sidebar>
+    <header-productos></header-productos>
+    <br>
     <div class="register">
       <form action="../form-result.php" target="_blank">
         <p class="users">
@@ -27,14 +29,14 @@
           Fecha de caducidad <input type="date" name="fechaCaducidad" ><br>
           <br>
           Simbolos Asociados <br>
-            <input type="checkbox" name="simbAsociado">Con receta medica <br>
-            <input type="checkbox" name="simbAsociado">Conservacion en frigorifico<br>
+            <input type="checkbox" name="simbAsociado">Con receta medica
+            <input type="checkbox" name="simbAsociado">Conservacion en frigorifico
             <input type="checkbox" name="simbAsociado">Caducidad inferior a 5 años <br>
-            <input type="checkbox" name="simbAsociado">Psicótropos <br>
-            <input type="checkbox" name="simbAsociado">Estupefacientes <br>
+            <input type="checkbox" name="simbAsociado">Psicótropos
+            <input type="checkbox" name="simbAsociado">Estupefacientes
             <input type="checkbox" name="simbAsociado">Aportación reducida Seguridad Social <br>
           <input type="button" @click="ingresarInfo" value="Confirmar">
-          <input type="button" value="Resetear">
+          <input type="reset" value="Limpiar formulario">
         </p>
       </form>
     </div>
@@ -42,11 +44,13 @@
 </template>
 
 <script>
-import Header from "@/components/Header";
+import Sidebar from "@/components/Sidebar";
+import HeaderProductos from "@/components/HeaderProductos";
 export default {
 name: "RegistroProductos",
   components:{
-    Header
+    HeaderProductos,
+    Sidebar
   },
   methods:{
     ingresarInfo(){

@@ -1,23 +1,25 @@
 <template>
   <div id='registerUsers' class="regUser">
-    <Header></Header>
+    <Sidebar></Sidebar>
+    <barra-modificaciones></barra-modificaciones>
+    <br>
     <div class="register">
-      <form action="../form-result.php" target="_blank">
+      <form id="formulario" method="post" action="datos.php">
         <p class="users">
-          Nombre <input type="text" name="nombre" required>
-          Apellido <input  type="text" name="apellido" required>
-          Rut (sin guiones) <input type="text" name="rut" required>
-          Numero telefonico <input type="text" name="nroTelefonico" required>
-          Correo electronico <input type="email" id='email' name="correo" required><br>
+          <b>Nombre</b> <input type="text" name="nombre" id="nombre" value=" " required>
+          <b>Apellido</b> <input  type="text" name="apellido" id="apellido" value=" " required>
+          <b>Rut (sin puntos)</b> <input type="text" :placeholder="rutInfo" name="rut" value=" " required>
+          <b>Numero telefonico</b> <input type="text" name="nroTelefonico" required>
+          <b>Correo electronico</b> <input type="email" id='email' name="correo" required><br>
           <br>
-          Contraseña <input type="password" name="contraseña" required>
-          Perfil de Usuario <br>
+          <b>Contraseña</b> <input type="password" name="contraseña" required>
+          <b>Perfil de Usuario</b> <br>
             <input type="radio" name="perfilUsuario" value="admin">Administrador
             <input type="radio" name="perfilUsuario" value="productos">Productos
             <input type="radio" name="perfilUsuario" value="productos">Proveedor<br>
           <br>
           <input type="button" @click="validarDatos" value="Confirmar">
-          <input type="button" value="Resetear">
+          <input type="reset" value="Limpiar formulario">
         </p>
       </form>
     </div>
@@ -25,17 +27,24 @@
 </template>
 
 <script>
-import Header from "@/components/Header";
+import Sidebar from "@/components/Sidebar";
+import BarraModificaciones from "@/components/HeaderUsuarios";
 export default {
   name: "RegistroUsuario",
     components: {
-    Header
+      BarraModificaciones,
+      Sidebar
     },
     methods:{
       validarDatos(){
-
+          alert("Usuario registrado");
         }
+      },
+    data(){
+      return{
+        rutInfo:"Ej.: 11111111-1"
       }
+    }
     }
 </script>
 

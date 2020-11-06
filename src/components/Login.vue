@@ -1,7 +1,9 @@
 <template>
   <div id="login">
-    <h1>Acceso Usuarios</h1>
+    <br>
     <img src="../assets/logo_Web.jpg" height="100" width="100"/>
+    <h1>Bienvenido</h1>
+    <h1></h1>
     <form action="/Home" method="GET" class="login-form">
       <div class="container">
 
