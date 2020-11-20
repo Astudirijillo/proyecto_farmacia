@@ -1,9 +1,10 @@
 <template>
   <div>
-    <Sidebar></Sidebar>
-    <header-productos></header-productos>
-    <table class="table" style="width: 50%">
+    <AccessBar></AccessBar>
+    <br>
+    <table class="table">
       <tr>
+        <th>Selec. Producto</th>
         <th>Cod. Producto</th>
         <th>Marca Comercial</th>
         <th>Nombre Cientifico</th>
@@ -12,20 +13,33 @@
         <th>Forma Farmaceutica</th>
         <th>Fecha de caducidad</th>
         <th>Simbologia asociada</th>
-        <th>Fecha de caducidad</th>
       </tr>
+        <td style="align-content: center"><input type="radio" name="perfilProducto" value=""></td>
+        <td>999999999</td>
+        <td>Loratadima</td>
+        <td>Loratadina</td>
+        <td>Antialergias</td>
+        <td>Si</td>
+        <td>Capsulas</td>
+        <td>03-06-2021</td>
+        <td>NN</td>
     </table>
+      <button @click="modificarProducto" class="modifBtn">Modificar producto seleccionado</button>
+      <br>
   </div>
 </template>
 
 <script>
-import Sidebar from "@/components/Sidebar";
-import HeaderProductos from "@/components/HeaderProductos";
+import AccessBar from "@/components/AccessBar";
 export default {
 name: "ListadoProductos",
   components: {
-    HeaderProductos,
-    Sidebar
+    AccessBar,
+  },
+  methods:{
+    modificarProducto(){
+      alert("Proveedor seleccionado para modificar");
+    }
   }
 }
 </script>

@@ -1,9 +1,8 @@
 <template>
     <div>
-      <Sidebar></Sidebar>
-      <BarraModificaciones></BarraModificaciones>
+      <AccessBar></AccessBar>
       <br>
-        <table class="table" style="width: 75%">
+        <table class="table">
           <tr class="tabla">
             <th>Selec. usuario</th>
             <th>Nombre</th>
@@ -11,7 +10,6 @@
             <th>Rut</th>
             <th>Numero Telefonico</th>
             <th>Correo electronico</th>
-            <th>Contraseña</th>
             <th>Perfiles de Usuario</th>
           </tr>
           <tr class="infoTabla">
@@ -21,21 +19,25 @@
             <td>19769527-7</td>
             <td>956110975</td>
             <td>castudillo@gmail.com</td>
-            <td><input type="button" value="Cambiar contraseña"></td>
             <td>Admin</td>
           </tr>
         </table>
+        <br>
+        <button @click="modificarUsuario" class="modifBtn">Modificar usuario seleccionado</button>
     </div>
 </template>
 
 <script>
-import Sidebar from "@/components/Sidebar";
-import BarraModificaciones from "@/components/HeaderUsuarios";
+import AccessBar from "@/components/AccessBar";
 export default {
 name: "ListadoUsuarios",
     components: {
-      BarraModificaciones,
-    Sidebar
+      AccessBar
+    },
+    methods:{
+      modificarUsuario(){
+        alert("Usuario seleccionado para modificar");
+      }
     }
 }
 </script>

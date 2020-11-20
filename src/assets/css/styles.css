@@ -12,12 +12,57 @@
     position: center;
 }
 
+.enterStock{
+    margin: auto;
+    width: 19%;
+    position: absolute;
+}
+
+.agrStockBtn{
+    background-color:#267e2b;
+    width: 100px;
+    height: 60px;
+    position: absolute;
+    left: 270px;
+    top: 80px;
+}
+.deleteBtn{
+    background-color:red;
+    width: 100px;
+    height: 80px;
+    position: absolute;
+    left: 270px;
+    top: 160px;
+    margin-left: auto;
+}
+
+.loadSistemBtn{
+    background-color: #248394;
+    width: 100px;
+    height: 80px;
+    position: absolute;
+    left: 270px;
+    top: 260px;
+}
+
+.enterStockTable{
+    position: absolute;
+    left: 400px;
+    top: 50px;
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+    border-spacing: 1px;
+    width: 70%;
+}
+
 .titleLogin {
     font-family: "Arial Rounded MT Bold";
     font-size: 90%;
     text-align: center;
     font-style: italic;
 }
+
 .accept{
     background-color: #4CAF50;
     color: white;
@@ -30,58 +75,14 @@
 .logo {
     margin-top: 20px;
 }
+
 body {font-family: Arial, Helvetica, sans-serif; margin: 0;}
 form {border: 3px solid #f1f1f1;}
 
-.footer {
-    font-family: "Arial Rounded MT Bold";
-    margin-top: 20px;
-}
 .login-form {
     width: 40%;
     margin: auto;
     text-align: left;
-}
-
-/* The sidebar menu */
-.sidenav {
-    height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 160px; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: #5ccb4e; /* Black */
-    overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 20px;
-}
-.inicio{
-    text-align: left;
-    background-color: darkgreen;
-}
-.redireccionar{
-    text-align: left;
-    background-color: #60ac05;
-}
-
-.cerrar{
-    text-align: left;
-    background-color: #f82342;
-    margin-top: 300px;
-}
-
-/* The navigation menu links */
-.sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #fafafa;
-    display: block;
-}
-
-/* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
-    color: #a1ecb9;
 }
 
 /* Style page content */
@@ -106,7 +107,7 @@ input[type=text], input[type=password] {
 }
 
 button {
-    background-color: #4CAF50;
+    background-color: #267e2b;
     color: white;
     padding: 14px 20px;
     margin: 8px 0;
@@ -119,32 +120,23 @@ button:hover {
     opacity: 0.8;
 }
 
-.creUs{
-    background-color: #4CAF50;
+.formBtn{
+    width: auto;
+    margin-left: 20px;
+    margin-right: 10px;
+    height: 25px;
+    background-color: #267e2b;
     color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 150px;
-    position: center;
 }
-
 
 .cancelbtn {
     width: auto;
     padding: 10px 18px;
     background-color: #f44336;
-}
-
-.imgcontainer {
-    text-align: center;
-    margin: 24px 0 12px 0;
-}
-
-img.avatar {
-    width: 40%;
-    border-radius: 50%;
+    font-style: normal !important;
+    text-align: left;
+    color: white;
+    font-family: "Montserrat SemiBold";
 }
 
 .container {
@@ -166,42 +158,136 @@ span.psw {
         width: 100%;
     }
 }
-.topnav {
-    overflow: hidden;
-    background-color: #14db74;
-    display: flex;
-    width: auto;
-    margin-left: 550px;
-    margin-right: 400px;
-    justify-content: space-between;
-}
 
-.topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-}
-
-.topnav a:hover {
-    background-color: #dddddd;
-    color: black;
-}
 .active {
     color: green;
     background-color: #70BF73;
 }
 
-.table{
+.table {
     margin-left: 200px;
     border: 1px solid black;
     padding: 5px;
     text-align: center;
     border-spacing: 1px;
+    width: 80%;
 }
 
+
 .infoTabla{
-    text-align: left;
+    text-align: center;
 }
+
+.modifBtn{
+    width: auto;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    background-color: #70BF73;
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    width: 160px;
+}
+.simbolos{
+    margin: 8px;
+}
+
+* {
+    margin:0px;
+    padding:0px;
+}
+
+#header {
+    overflow: hidden;
+    background-color: #399645;
+    display: flex;
+    justify-content: space-between;
+    width:auto;
+    font-family:Montserrat;
+}
+
+ul, ol {
+    list-style:none;
+}
+
+.nav > li {
+    float:left;
+}
+
+.nav li a {
+    background-color: #225a2a;
+    color: #f5fcf7;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+
+}
+
+.nav li a:hover {
+    background-color: #29b832;
+}
+
+.nav li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+}
+
+.nav li:hover > ul {
+    display:block;
+}
+
+.nav li ul li {
+    position:relative;
+}
+
+.nav li ul li ul {
+    right:-140px;
+    top:0px;
+}
+/***********************************************************************************+*/
+ul, ol {
+    list-style:none;
+}
+
+.navStock > li {
+    float:left;
+}
+
+.navStock li a {
+    background-color: #196963;
+    color: #f5fcf7;
+    text-decoration:none;
+    padding:10px 12px;
+    display:block;
+}
+
+.navStock li a:hover {
+    background-color: #0d9b84;
+}
+
+.navStock li ul {
+    display:none;
+    position:absolute;
+    min-width:140px;
+    width: auto;
+}
+
+.navStock li:hover > ul {
+    display:block;
+}
+
+.navStock li ul li {
+    position:relative;
+}
+
+.navStock li ul li ul {
+    right:-140px;
+    top:0px;
+}
+
+
+

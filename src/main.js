@@ -7,12 +7,12 @@ import Login from "./components/Login";
 import RegistroUsuario from "./components/RegistroUsuario";
 import RegistroProductos from "./components/RegistroProductos";
 import RegistroProveedor from "./components/RegistroProveedor";
-import Usuarios from "./components/Usuarios";
-import Productos from "./components/Productos";
-import Proveedores from "./components/Proveedores";
 import ListadoUsuarios from "./components/ListadoUsuarios";
 import ListadoProductos from "./components/ListadoProductos";
 import ListadoProveedores from "./components/ListadoProveedores";
+import EntradaStock from "./components/EntradaStock";
+import SalidaStock from "./components/SalidaStock";
+import Reportes from "./components/Reportes";
 
 Vue.config.productionTip = false
 
@@ -25,12 +25,12 @@ const routes = [
     {path: '/registerUsers', component: RegistroUsuario},
     {path: '/registerProduct', component: RegistroProductos},
     {path: '/registerProveedor', component: RegistroProveedor},
-    {path: '/users', component: Usuarios},
-    {path: '/products', component: Productos},
-    {path: '/proveedor', component: Proveedores},
     {path: '/listUsers', component:ListadoUsuarios},
+    {path: '/addStock', component: EntradaStock},
+    {path: '/discountStock', component: SalidaStock},
     {path: '/listProducts', component: ListadoProductos},
     {path: '/listProveedor', component: ListadoProveedores},
+    {path: '/reports', component: Reportes},
     {path: '*', component: ErrorComponent}
 ]
 

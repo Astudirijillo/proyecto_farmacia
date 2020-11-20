@@ -1,18 +1,20 @@
 <template>
   <div>
-    <Sidebar></Sidebar>
-    <header-proveedores></header-proveedores>
+    <AccessBar></AccessBar>
     <br>
     <div class="register">
       <form action="../form-result.php" target="_blank">
         <p class="users">
-          Razon Social<input type="text" name="razonSocial">
-          Rut (sin puntos) <input type="text" :placeholder="rutInfo" name="rut">
-          Direccion <input type="text" name="direccion">
-          Nro. telefonico <input type="text" name="nroTelefonico">
-          Correo Electronico <input type="text" name="correo">
-          <input type="button" @click="validarInfo" value="Confirmar">
-          <input type="reset" value="Limpiar formulario">
+          <br>
+          <b>Razon Social</b><input type="text" name="razonSocial">
+          <b>Rut (sin puntos)</b> <input type="text" :placeholder="rutInfo" name="rut" required>
+          <b>Direccion</b> <input type="text" name="direccion">
+          <b>Nro. telefonico</b> <input type="text" name="nroTelefonico">
+          <b>Correo Electronico</b> <input type="text" name="correo">
+          <br>
+          <br>
+          <input type="button" class="formBtn" @click="validarInfo" value="Confirmar">
+          <input type="reset" class="formBtn" value="Limpiar formulario">
         </p>
       </form>
     </div>
@@ -20,13 +22,11 @@
 </template>
 
 <script>
-import Sidebar from "@/components/Sidebar";
-import HeaderProveedores from "@/components/HeaderProveedores";
+import AccessBar from "@/components/AccessBar";
 export default {
 name: "RegistroProveedor",
   components: {
-    HeaderProveedores,
-    Sidebar
+    AccessBar
   },
   methods:{
     validarInfo(){

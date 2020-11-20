@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import Header from "@/components/Sidebar";
+import Header from "@/components/AccessBar";
 export default {
 name: "ErrorComponent",
   components: {Header}

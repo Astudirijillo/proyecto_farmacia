@@ -2,12 +2,12 @@
   <div id="login">
     <br>
     <img src="../assets/logo_Web.jpg" height="100" width="100"/>
-    <h1>Bienvenido</h1>
-    <h1></h1>
+    <br>
+    <h1><i>Bienvenido</i></h1>
+    <br>
     <form action="/Home" method="GET" class="login-form">
       <div class="container">
-
-        <label><b>Usuario</b></label>
+        <label><b>Correo electronico</b></label>
         <input type="text" :placeholder="username" name="uname" required> <!-- asi se imprimie una variable dentro de atributos html -->
 
         <label><b>Contraseña</b></label>

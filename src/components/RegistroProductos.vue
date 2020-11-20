@@ -1,19 +1,19 @@
 <template>
   <div>
-    <sidebar></sidebar>
-    <header-productos></header-productos>
+    <AccessBar></AccessBar>
     <br>
     <div class="register">
       <form action="../form-result.php" target="_blank">
         <p class="users">
-          Codigo del Producto <input type="text" name="codigo">
-          Nombre Producto <input type="text" name="nombreProducto">
-          Nombre Cientifico  <input type="text" name="nombreCientifico">
-          ¿Bioequivalente? <br>
+          <br>
+          <b>Codigo del Producto</b> <input type="text" name="codigo">
+          <b>Nombre Producto</b> <input type="text" name="nombreProducto">
+          <b>Nombre Cientifico</b><input type="text" name="nombreCientifico">
+          <b>¿Bioequivalente?</b> <br>
             <input type="radio" name="bioequivalente" value="si">SI
             <input type="radio" name="bioequivalente" value="no">NO<br>
           <br>
-          Tipo de Uso <select name="tipoUso">
+          <b>Tipo de Uso</b> <select name="tipoUso">
             <option>Analgésicos</option>
             <option>Antiácidos</option>
             <option>Antialérgicos</option>
@@ -26,17 +26,18 @@
             <option>Mucolíticos</option>
           </select><br>
           <br>
-          Fecha de caducidad <input type="date" name="fechaCaducidad" ><br>
+          <b>Fecha de caducidad</b> <input type="date" name="fechaCaducidad" ><br>
           <br>
-          Simbolos Asociados <br>
-            <input type="checkbox" name="simbAsociado">Con receta medica
-            <input type="checkbox" name="simbAsociado">Conservacion en frigorifico
-            <input type="checkbox" name="simbAsociado">Caducidad inferior a 5 años <br>
-            <input type="checkbox" name="simbAsociado">Psicótropos
-            <input type="checkbox" name="simbAsociado">Estupefacientes
-            <input type="checkbox" name="simbAsociado">Aportación reducida Seguridad Social <br>
-          <input type="button" @click="ingresarInfo" value="Confirmar">
-          <input type="reset" value="Limpiar formulario">
+          <b>Simbolos Asociados</b> <br>
+            <input type="checkbox" name="simbAsociado" class="simbolos">Con receta medica |
+            <input type="checkbox" name="simbAsociado" class="simbolos">Psicótropos |
+            <input type="checkbox" name="simbAsociado" class="simbolos">Estupefacientes<br>
+            <input type="checkbox" name="simbAsociado" class="simbolos">Conservacion en frigorificos |
+            <input type="checkbox" name="simbAsociado" class="simbolos">Caducidad inferior a 5 años<br>
+            <input type="checkbox" name="simbAsociado" class="simbolos">Aportacion Seguridad social<br>
+          <br>
+          <input type="button" class="formBtn" @click="ingresarInfo" value="Confirmar">
+          <input type="reset" class="formBtn" value="Limpiar formulario">
         </p>
       </form>
     </div>
@@ -44,13 +45,11 @@
 </template>
 
 <script>
-import Sidebar from "@/components/Sidebar";
-import HeaderProductos from "@/components/HeaderProductos";
+import AccessBar from "@/components/AccessBar";
 export default {
 name: "RegistroProductos",
   components:{
-    HeaderProductos,
-    Sidebar
+    AccessBar
   },
   methods:{
     ingresarInfo(){

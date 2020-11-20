@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Sidebar></Sidebar>
+    <AccessBar></AccessBar>
     <br>
     <br>
     <div class="login">
@@ -16,11 +16,11 @@
 </template>
 
 <script>
-import Sidebar from "@/components/Sidebar";
+import AccessBar from "@/components/AccessBar";
 export default {
   name: "Login",
     components: {
-      Sidebar,
+      AccessBar,
   }
 }
 </script>
