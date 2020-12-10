@@ -21,11 +21,11 @@
       </form>
     </div>
     <div>
-      <button class="agrStockBtn">Agregar al lote</button>
+      <button class="agrStockBtn" >Agregar al lote</button>
       <br>
       <button class="deleteBtn">Quitar seleccion del lote</button>
       <br>
-      <button class="loadSistemBtn">Guardar lote en sistema</button>
+      <button class="loadSistemBtn" @click="ingresoConfirmado">Guardar lote en sistema</button>
     </div>
     <div>
       <table class="enterStockTable">
@@ -58,6 +58,11 @@ name: "EntradaStock",
   data(){
     return{
       rutInfo:"Ej.: 11111111-1"
+    }
+  },
+  methods:{
+    ingresoConfirmado(){
+      alert("Lote ingresado nro. XXXX");
     }
   }
 }

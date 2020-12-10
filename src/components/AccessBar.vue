@@ -30,7 +30,7 @@
         </li>
       <br>
     </ul>
-    <router-link to="/login" class="cancelbtn">Cerrar Sesion</router-link>
+    <a href="/login" class="cancelbtn">Cerrar Sesion</a>
   </div>
 </template>
 

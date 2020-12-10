@@ -15,7 +15,7 @@
           <b>Motivo del retiro</b> <input type="text" name="motivRetiro">
           <br>
           <br>
-          <input type="button" class="formBtn" @click="validarInfo" value="Confirmar">
+          <input type="button" class="formBtn" @click="descuentoConfirmado" value="Confirmar">
           <input type="reset" class="formBtn" value="Limpiar formulario">
         </p>
       </form>
@@ -28,6 +28,11 @@ import AccessBar from "@/components/AccessBar";
 export default {
 name: "SalidaStock",
   components: {AccessBar},
+  methods:{
+    descuentoConfirmado(){
+      alert("Se ha descontado el producto");
+    }
+  }
 }
 </script>
 

@@ -8,6 +8,17 @@
 
 .register{
     margin: auto;
+    width: 50%;
+    position: center;
+}
+
+.space {
+    margin-left: 15px;
+    margin-right: 5px;
+}
+
+.reportes{
+    margin: auto;
     width: 40%;
     position: center;
 }
@@ -47,7 +58,7 @@
 
 .enterStockTable{
     position: absolute;
-    left: 400px;
+    left: 390px;
     top: 50px;
     border: 1px solid black;
     padding: 5px;
@@ -132,8 +143,8 @@ button:hover {
 .cancelbtn {
     width: auto;
     padding: 10px 18px;
+    text-decoration: none !important;
     background-color: #f44336;
-    font-style: normal !important;
     text-align: left;
     color: white;
     font-family: "Montserrat SemiBold";
@@ -210,14 +221,17 @@ span.psw {
 }
 
 ul, ol {
+    z-index: 100;
     list-style:none;
 }
 
 .nav > li {
+    z-index: 100;
     float:left;
 }
 
 .nav li a {
+    z-index: 100;
     background-color: #225a2a;
     color: #f5fcf7;
     text-decoration:none;
@@ -227,10 +241,12 @@ ul, ol {
 }
 
 .nav li a:hover {
+    z-index: 100;
     background-color: #29b832;
 }
 
 .nav li ul {
+    z-index: 100;
     display:none;
     position:absolute;
     min-width:140px;
@@ -238,17 +254,21 @@ ul, ol {
 
 .nav li:hover > ul {
     display:block;
+    z-index: 100;
 }
 
 .nav li ul li {
     position:relative;
+    z-index: 100;
 }
 
 .nav li ul li ul {
+    z-index: 100;
     right:-140px;
     top:0px;
 }
 /***********************************************************************************+*/
+
 ul, ol {
     list-style:none;
 }
@@ -288,6 +308,5 @@ ul, ol {
     right:-140px;
     top:0px;
 }
-
 
 
