@@ -1,6 +1,5 @@
 <template>
   <div>
-    <AccessBar></AccessBar>
     <br>
     <div class="enterStock">
       <form action="../form-result.php" target="_blank">
@@ -51,10 +50,9 @@
 </template>
 
 <script>
-import AccessBar from "@/components/AccessBar";
 export default {
 name: "EntradaStock",
-  components: {AccessBar},
+  components: {},
   data(){
     return{
       rutInfo:"Ej.: 11111111-1"

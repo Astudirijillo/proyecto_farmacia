@@ -2,6 +2,10 @@
     display: flex;
     justify-content: center;
 }
+
+#un_div{
+    display: none;
+}
 #app {
     margin-top: 0 !important;
 }
@@ -18,14 +22,20 @@
 }
 
 .reportes{
+    margin-top: 50px !important;
     margin: auto;
-    width: 40%;
-    position: center;
+    width: 30%;
+    position: fixed;
+}
+
+.reportes b {
+    text-align: justify-all;
 }
 
 .enterStock{
+    margin-top: 10px !important;
     margin: auto;
-    width: 19%;
+    width: 20%;
     position: absolute;
 }
 
@@ -34,7 +44,7 @@
     width: 100px;
     height: 60px;
     position: absolute;
-    left: 270px;
+    left: 280px;
     top: 80px;
 }
 .deleteBtn{
@@ -42,7 +52,7 @@
     width: 100px;
     height: 80px;
     position: absolute;
-    left: 270px;
+    left: 280px;
     top: 160px;
     margin-left: auto;
 }
@@ -52,11 +62,12 @@
     width: 100px;
     height: 80px;
     position: absolute;
-    left: 270px;
+    left: 280px;
     top: 260px;
 }
 
 .enterStockTable{
+    margin-top: 20px !important;
     position: absolute;
     left: 390px;
     top: 50px;
@@ -65,7 +76,9 @@
     text-align: center;
     border-spacing: 1px;
     width: 70%;
+    border-collapse: collapse;
 }
+
 
 .titleLogin {
     font-family: "Arial Rounded MT Bold";
@@ -176,12 +189,21 @@ span.psw {
 }
 
 .table {
-    margin-left: 200px;
-    border: 1px solid black;
+    margin-left: 15px;
     padding: 5px;
     text-align: center;
-    border-spacing: 1px;
-    width: 80%;
+    width: 98%;
+    border-collapse: collapse;
+}
+
+
+
+.table, th, td {
+    border: 1px solid black;
+}
+
+th, td{
+   padding: 4px !important;
 }
 
 
@@ -255,6 +277,7 @@ ul, ol {
 .nav li:hover > ul {
     display:block;
     z-index: 100;
+    min-width: 100px;
 }
 
 .nav li ul li {
@@ -292,7 +315,7 @@ ul, ol {
 .navStock li ul {
     display:none;
     position:absolute;
-    min-width:140px;
+    min-width:155px;
     width: auto;
 }
 

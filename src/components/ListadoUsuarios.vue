@@ -1,7 +1,7 @@
 <template>
     <div>
-      <AccessBar></AccessBar>
       <br>
+      <div>
         <table class="table">
           <tr class="tabla">
             <th>Selec. usuario</th>
@@ -22,21 +22,29 @@
             <td>Admin</td>
           </tr>
         </table>
+      </div>
         <br>
         <button @click="modificarUsuario" class="modifBtn">Modificar usuario seleccionado</button>
+      <div id="un_div">
+        <RegistroUsuario></RegistroUsuario>
+      </div>
     </div>
 </template>
 
 <script>
-import AccessBar from "@/components/AccessBar";
+import RegistroUsuario from "./RegistroUsuario";
 export default {
 name: "ListadoUsuarios",
     components: {
-      AccessBar
+      RegistroUsuario
+    },
+    data(){
+
     },
     methods:{
       modificarUsuario(){
-        alert("Usuario seleccionado para modificar");
+        var div = document.getElementById("un_div");
+        div.style.display="Block";
       }
     }
 }

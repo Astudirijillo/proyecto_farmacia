@@ -1,10 +1,10 @@
 <template>
   <div>
-    <AccessBar></AccessBar>
     <br>
-    <table class="table">
+    <div>
+      <table class="table">
         <tr>
-          <th>Selec. Proveedor</th>
+          <th>Selec.</th>
           <th>Razon social</th>
           <th>Rut</th>
           <th>Direccion</th>
@@ -13,7 +13,7 @@
           <th>Numero Telefonico</th>
         </tr>
         <tr>
-          <td style="align-content: center"><input type="radio" name="perfilProveedor" value=""></td>
+          <td><input type="radio" name="perfilProveedor" value=""></td>
           <td>FARMACIAS KNOP LIMITADA</td>
           <td>79781370-2</td>
           <td>Av Libertador Bernardo O'Higgins 1665</td>
@@ -21,19 +21,24 @@
           <td>contacto@farmaciaknop.cl</td>
           <td>56-225698300</td>
         </tr>
-    </table>
-        <button @click="modificarProveedor" class="modifBtn">Modificar proveedor seleccionado</button>
+      </table>
+    </div>
+    <button @click="modificarProveedor" class="modifBtn" >Modificar proveedor seleccionado</button>
+    <div id="un_div">
+      <RegistroProveedor></RegistroProveedor>
+    </div>
   </div>
 </template>
 
 <script>
-import AccessBar from "@/components/AccessBar";
+import RegistroProveedor from "./RegistroProveedor";
 export default {
   name: "ListadoProveedores",
-  components: {AccessBar},
+  components: {RegistroProveedor},
   methods:{
     modificarProveedor(){
-      alert("Proveedor seleccionado para modificar");
+      var div = document.getElementById("un_div");
+      div.style.display="Block";
     }
   }
 }

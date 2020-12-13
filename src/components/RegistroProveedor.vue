@@ -1,6 +1,5 @@
 <template>
   <div>
-    <AccessBar></AccessBar>
     <br>
     <div class="register">
       <form action="../form-result.php" target="_blank">
@@ -22,11 +21,9 @@
 </template>
 
 <script>
-import AccessBar from "@/components/AccessBar";
 export default {
 name: "RegistroProveedor",
   components: {
-    AccessBar
   },
   methods:{
     validarInfo(){
