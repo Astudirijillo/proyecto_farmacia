@@ -1,5 +1,6 @@
 <template>
   <div>
+    <access-bar></access-bar>
     <br>
     <div class="enterStock">
       <form action="../form-result.php" target="_blank">
@@ -15,47 +16,34 @@
           <b>Fecha de vencimiento</b> <input type="date" name="fechaVen">
           <br>
           <br>
+          <input type="reset" class="formBtn" value="Ingresar stock">
           <input type="reset" class="formBtn" value="Limpiar formulario">
         </p>
       </form>
-    </div>
-    <div>
-      <button class="agrStockBtn" >Agregar al lote</button>
-      <br>
-      <button class="deleteBtn">Quitar seleccion del lote</button>
-      <br>
-      <button class="loadSistemBtn" @click="ingresoConfirmado">Guardar lote en sistema</button>
-    </div>
-    <div>
-      <table class="enterStockTable">
-        <tr>
-          <th></th>
-          <th>Cod. Producto</th>
-          <th>Rut Proveedor</th>
-          <th>Nro. de Lote</th>
-          <th>Cantidad a ingresar</th>
-          <th>Fecha de recepcion</th>
-          <th>Fecha de vencimiento</th>
-        </tr>
-        <td style="align-content: center"><input type="radio" name="perfilProducto" value=""></td>
-        <td>999999999</td>
-        <td>Loratadima</td>
-        <td>Loratadina</td>
-        <td>Antialergias</td>
-        <td>Si</td>
-        <td>Capsulas</td>
-      </table>
+      <div class="infoProveedor">
+        <label><b>Razon Social: </b> {{razonSocial}}</label><br>
+        <label><b>Nro. Telefonico: </b> Proculo</label><br>
+        <label><b>Nombre Proveedor: </b> Proculo</label>
+      </div>
+      <div class="infoProducto">
+        <label><b>Nombre comercial: </b> {{marcaComercial}}</label><br>
+        <label><b>Nombre cientifico: </b> {{nombreCientifico}}</label>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import AccessBar from "./AccessBar";
 export default {
 name: "EntradaStock",
-  components: {},
+  components: {AccessBar},
   data(){
     return{
-      rutInfo:"Ej.: 11111111-1"
+      rutInfo:"Ej.: 11111111-1",
+      marcaComercial: "Prueba2.1",
+      nombreCientifico: "Prueba2.2",
+      razonSocial: "Prueba 1.1"
     }
   },
   methods:{

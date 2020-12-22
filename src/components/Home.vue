@@ -1,5 +1,6 @@
 <template>
   <div>
+    <access-bar></access-bar>
     <br>
     <br>
     <div class="login">
@@ -15,9 +16,11 @@
 </template>
 
 <script>
+import AccessBar from "./AccessBar";
 export default {
   name: "Login",
     components: {
+      AccessBar
   }
 }
 </script>

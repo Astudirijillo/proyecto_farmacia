@@ -1,50 +1,56 @@
 <template>
     <div>
+      <access-bar class="userBar"></access-bar>
       <br>
       <div>
         <table class="table">
           <tr class="tabla">
-            <th>Selec. usuario</th>
             <th>Nombre</th>
             <th>Apellido</th>
             <th>Rut</th>
             <th>Numero Telefonico</th>
             <th>Correo electronico</th>
-            <th>Perfiles de Usuario</th>
+            <th>¿Es Administrador?</th>
+            <th>Acciones</th>
           </tr>
           <tr class="infoTabla">
-            <td style="align-content: center"><input type="radio" name="perfilUsuario" value=""></td>
-            <td>Cristobal</td>
-            <td>Astudillo</td>
-            <td>19769527-7</td>
-            <td>956110975</td>
-            <td>castudillo@gmail.com</td>
-            <td>Admin</td>
+            <td> <input type="text" class="editProv" :placeholder="rz"></td>
+            <td><input type="text" class="editProv" :placeholder="r"> </td>
+            <td><input type="text" class="editProv" :placeholder="d"> </td>
+            <td><input type="text" class="editProv" :placeholder="c"> </td>
+            <td><input type="text" class="editProv" :placeholder="ce"> </td>
+            <td><input type="text" class="editProv" :placeholder="nt"> </td>
+            <td><button @click="editarUsuario">Guardar Cambios</button>
+              <button type="button" @click="eliminarUsuario">Eliminar</button></td>
           </tr>
         </table>
-      </div>
-        <br>
-        <button @click="modificarUsuario" class="modifBtn">Modificar usuario seleccionado</button>
-      <div id="un_div">
-        <RegistroUsuario></RegistroUsuario>
       </div>
     </div>
 </template>
 
 <script>
-import RegistroUsuario from "./RegistroUsuario";
+import AccessBar from "./AccessBar";
 export default {
 name: "ListadoUsuarios",
     components: {
-      RegistroUsuario
+      AccessBar,
     },
     data(){
-
+      return{
+        rz:"xD",
+        r:"19769527-7",
+        d:"XD",
+        c:"XD",
+        ce: "XD",
+        nt:"xD",
+      }
     },
     methods:{
-      modificarUsuario(){
-        var div = document.getElementById("un_div");
-        div.style.display="Block";
+      editarUsuario(){
+        alert("Los cambios han sido guardados");
+      },
+      eliminarUsuario(){
+        alert("Usuario Eliminado");
       }
     }
 }

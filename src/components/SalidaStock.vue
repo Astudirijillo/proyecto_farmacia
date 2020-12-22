@@ -1,7 +1,8 @@
 <template>
   <div>
+    <access-bar></access-bar>
     <br>
-    <div class="register">
+    <div class="salidaStock">
       <form action="../form-result.php" target="_blank">
         <p class="stock">
           <br>
@@ -18,17 +19,28 @@
           <input type="reset" class="formBtn" value="Limpiar formulario">
         </p>
       </form>
+      <div class="infoProducto">
+        <label><b>Nombre comercial: </b> {{marcaComercial}}</label><br>
+        <label><b>Nombre cientifico: </b> {{nombreCientifico}}</label>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import AccessBar from "./AccessBar";
 export default {
 name: "SalidaStock",
-  components: {},
+  components: {AccessBar},
   methods:{
     descuentoConfirmado(){
       alert("Se ha descontado el producto");
+    },
+    data(){
+      return{
+        marcaComercial:"Pruebas",
+        nombreCientifico:"Pruebas",
+      }
     }
   }
 }

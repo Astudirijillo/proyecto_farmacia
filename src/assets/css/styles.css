@@ -3,9 +3,14 @@
     justify-content: center;
 }
 
+.editProv {
+    width: 80% !important;
+}
+
 #un_div{
     display: none;
 }
+
 #app {
     margin-top: 0 !important;
 }
@@ -16,60 +21,43 @@
     position: center;
 }
 
+.salidaStock{
+    margin: auto;
+    margin-left: 10%;
+    width: 30%;
+    position: center;
+}
+
 .space {
     margin-left: 15px;
     margin-right: 5px;
 }
 
-.reportes{
-    margin-top: 50px !important;
-    margin: auto;
-    width: 30%;
-    position: fixed;
+.reportes b {
+    text-align: left;
+    margin-right: 8px;
 }
 
-.reportes b {
-    text-align: justify-all;
+.tablaReportes {
+    visibility: visible;
+    margin-left: 16%;
+    padding: 5px;
+    text-align: center;
+    width: 98%;
+    border-collapse: collapse;
 }
 
 .enterStock{
     margin-top: 10px !important;
-    margin: auto;
-    width: 20%;
+    margin-left: 15%;
+    width: 30%;
     position: absolute;
 }
 
-.agrStockBtn{
-    background-color:#267e2b;
-    width: 100px;
-    height: 60px;
+.infoProveedor{
+    margin-top: 80px !important;
     position: absolute;
-    left: 280px;
-    top: 80px;
-}
-.deleteBtn{
-    background-color:red;
-    width: 100px;
-    height: 80px;
-    position: absolute;
-    left: 280px;
-    top: 160px;
-    margin-left: auto;
-}
-
-.loadSistemBtn{
-    background-color: #248394;
-    width: 100px;
-    height: 80px;
-    position: absolute;
-    left: 280px;
-    top: 260px;
-}
-
-.enterStockTable{
-    margin-top: 20px !important;
-    position: absolute;
-    left: 390px;
+    margin-left: 120%;
     top: 50px;
     border: 1px solid black;
     padding: 5px;
@@ -78,13 +66,36 @@
     width: 70%;
     border-collapse: collapse;
 }
+.infoProducto{
+    margin-left: 120%;
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+    border-spacing: 1px;
+    width: 70%;
+    border-collapse: collapse;
+}
 
+.loginButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    text-align: center;
+    font-family: "Montserrat SemiBold";
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 50%;
+}
 
 .titleLogin {
     font-family: "Arial Rounded MT Bold";
     font-size: 90%;
     text-align: center;
     font-style: italic;
+    margin-left: 5%;
+    margin-top: 3%;
 }
 
 .accept{
@@ -130,7 +141,7 @@ input[type=text], input[type=password] {
     box-sizing: border-box;
 }
 
-button {
+.accBtn {
     background-color: #267e2b;
     color: white;
     padding: 14px 20px;
@@ -140,11 +151,17 @@ button {
     width: 100%;
 }
 
-button:hover {
-    opacity: 0.8;
+
+button{
+    width: auto;
+    margin-left: 20px;
+    margin-right: 10px;
+    height: 25px;
+    background-color: #267e2b;
+    color: white;
 }
 
-.formBtn{
+reset{
     width: auto;
     margin-left: 20px;
     margin-right: 10px;
@@ -189,14 +206,13 @@ span.psw {
 }
 
 .table {
-    margin-left: 15px;
-    padding: 5px;
+    margin-left: 2%;
+    margin-bottom: 2px;
+    padding: 2px;
     text-align: center;
-    width: 98%;
+    width: 96%;
     border-collapse: collapse;
 }
-
-
 
 .table, th, td {
     border: 1px solid black;
@@ -205,7 +221,6 @@ span.psw {
 th, td{
    padding: 4px !important;
 }
-
 
 .infoTabla{
     text-align: center;

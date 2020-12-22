@@ -37,8 +37,9 @@
 <script>
 export default {
   name: "AccessBar",
-  components: {}
-}
+  components: {},
+  }
+
 </script>
 
 <style type="text/css">

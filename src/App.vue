@@ -1,17 +1,13 @@
 <template>
   <div id="app">
-    <access-bar></access-bar>
     <router-view></router-view>
   </div>
 </template>
 
 <script>
-
-import AccessBar from "./components/AccessBar";
 export default {
   name: 'App',
   components: {
-    AccessBar
   }
 }
 </script>

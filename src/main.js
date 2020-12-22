@@ -1,5 +1,5 @@
-import Vue from 'vue'
-import App from './App.vue'
+import Vue from 'vue';
+import App from './App.vue';
 import VueRouter from "vue-router";
 import Home from "./components/Home";
 import ErrorComponent from "./components/ErrorComponent";
@@ -13,6 +13,7 @@ import ListadoProveedores from "./components/ListadoProveedores";
 import EntradaStock from "./components/EntradaStock";
 import SalidaStock from "./components/SalidaStock";
 import Reportes from "./components/Reportes";
+import AccessBar from "./components/AccessBar";
 
 Vue.config.productionTip = false
 
@@ -22,6 +23,7 @@ const routes = [
     {path: '/login/:id?', name: 'login', component: Login },
     {path: '/home', component: Home},
     {path: '/', component: Login},
+    {path: '/accessBar/', component: AccessBar},
     {path: '/registerUsers', component: RegistroUsuario},
     {path: '/registerProduct', component: RegistroProductos},
     {path: '/registerProveedor', component: RegistroProveedor},

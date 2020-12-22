@@ -1,5 +1,6 @@
 <template>
   <div>
+    <access-bar></access-bar>
     <br>
     <div class="register">
       <form action="../form-result.php" target="_blank">
@@ -9,20 +10,20 @@
           <b>Nombre Producto</b> <input type="text" name="nombreProducto">
           <b>Nombre Cientifico</b><input type="text" name="nombreCientifico">
           <b>¿Bioequivalente?</b> <br>
-            <input type="radio" name="bioequivalente" value="si">SI
-            <input type="radio" name="bioequivalente" value="no">NO<br>
+            <input type="radio" name="bioequivalente" value="true">SI
+            <input type="radio" name="bioequivalente" value="false">NO<br>
           <br>
           <b>Tipo de Uso</b> <select name="tipoUso">
-            <option>Analgésicos</option>
-            <option>Antiácidos</option>
-            <option>Antialérgicos</option>
-            <option>Antidiarreicos</option>
-            <option>Laxante</option>
-            <option>Anti infecciosos</option>
-            <option>Anti inflamatorios</option>
-            <option>Antipiréticos</option>
-            <option>Anti tusivos </option>
-            <option>Mucolíticos</option>
+            <option value="1">Analgésicos</option>
+            <option value="2">Antiácidos</option>
+            <option value="3">Antialérgicos</option>
+            <option value="4">Antidiarreicos</option>
+            <option value="5">Laxante</option>
+            <option value="6">Anti-infecciosos</option>
+            <option value="7">Anti-inflamatorios</option>
+            <option value="8">Antipiréticos</option>
+            <option value="9">Anti-tusivos</option>
+            <option value="10">Mucolíticos</option>
           </select><br>
           <br>
           <b>Fecha de caducidad</b> <input type="date" name="fechaCaducidad" ><br>
@@ -44,9 +45,11 @@
 </template>
 
 <script>
+import AccessBar from "./AccessBar";
 export default {
 name: "RegistroProductos",
   components:{
+    AccessBar
   },
   methods:{
     ingresarInfo(){
