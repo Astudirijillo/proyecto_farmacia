@@ -43,14 +43,14 @@ name: "ListadoProductos",
   },
   data(){
     return{
-      cp:"xD",
-      mc:"19769527-7",
-      nc:"XD",
-      tp:"XD",
-      b: "xD",
-      ff: "XD",
-      fc:"xD",
-      sa: "xD",
+      cp:"9999999999999",
+      mc:"Loratadina",
+      nc:"Loratadina",
+      tp:"Antialergico",
+      b: "SI",
+      ff: "Capsula",
+      fc:"25/12/2025",
+      sa: "NN",
     }
   },
   methods:{

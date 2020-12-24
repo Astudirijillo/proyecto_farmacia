@@ -7,7 +7,7 @@
       <h1 v-if="loading">Cargando listado...</h1>
       <div v-else>
         <br>
-        <div v-for="prov in proveedor" :key="prov.id">
+        <div>
           <b>Ingrese rut del Proveedor: </b> <input type="search" name="codProducto">
           <input type="button" value="Buscar">
           <br>
@@ -22,11 +22,11 @@
               <th>Acciones</th>
             </tr>
             <tr>
-              <td> <input type="text" class="editProv" :placeholder="prov.razonSocial"></td>
-              <td><input type="text" class="editProv" :placeholder="prov.rut"> </td>
-              <td><input type="text" class="editProv" :placeholder="prov.direccion"> </td>
-              <td><input type="text" class="editProv" :placeholder="prov.correo"> </td>
-              <td><input type="text" class="editProv" :placeholder="prov.nroTelefonico"> </td>
+              <td> <input type="text" class="editProv" :placeholder="rz"></td>
+              <td><input type="text" class="editProv" :placeholder="r"> </td>
+              <td><input type="text" class="editProv" :placeholder="d"> </td>
+              <td><input type="text" class="editProv" :placeholder="ce"> </td>
+              <td><input type="text" class="editProv" :placeholder="nt"> </td>
               <td><button @click="editarProveedor">Guardar Cambios</button>
                 <button @click="removeProveedor(proveedores.id)">Eliminar</button>
               </td>
@@ -48,12 +48,11 @@ export default {
   components: {AccessBar},
   data(){
     return{
-      rz:"xD",
+      rz:"Laboratorio OPKO S.A.",
       r:"19769527-7",
-      d:"XD",
-      c:"XD",
-      ce: "XD",
-      nt:"xD",
+      d:"Av. Apoquindo 3721, Santiago",
+      ce: "contacto@opko.cl",
+      nt:"800 383 700",
       hasError: false,
       loading: true
     }
@@ -71,7 +70,7 @@ export default {
         .get('http://127.0.0.1:8000/proveedores')
         .then(response => (this.proveedores = response.data.data))
         // eslint-disable-next-line no-unused-vars
-        .catch(error => this.hasError = true)
+        .catch(error => this.hasError = false)
         .finally(() => this.loading = false)
   }
 }

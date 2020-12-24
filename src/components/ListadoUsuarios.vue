@@ -14,12 +14,12 @@
             <th>Acciones</th>
           </tr>
           <tr class="infoTabla">
-            <td> <input type="text" class="editProv" :placeholder="rz"></td>
+            <td> <input type="text" class="editProv" :placeholder="n"></td>
+            <td><input type="text" class="editProv" :placeholder="ap"> </td>
             <td><input type="text" class="editProv" :placeholder="r"> </td>
-            <td><input type="text" class="editProv" :placeholder="d"> </td>
-            <td><input type="text" class="editProv" :placeholder="c"> </td>
-            <td><input type="text" class="editProv" :placeholder="ce"> </td>
             <td><input type="text" class="editProv" :placeholder="nt"> </td>
+            <td><input type="text" class="editProv" :placeholder="ce"> </td>
+            <td><input type="text" class="editProv" :placeholder="ad"> </td>
             <td><button @click="editarUsuario">Guardar Cambios</button>
               <button type="button" @click="eliminarUsuario">Eliminar</button></td>
           </tr>
@@ -37,12 +37,12 @@ name: "ListadoUsuarios",
     },
     data(){
       return{
-        rz:"xD",
+        n:"Cristobal ",
+        ap:"Astudillo Cid",
         r:"19769527-7",
-        d:"XD",
-        c:"XD",
-        ce: "XD",
-        nt:"xD",
+        ce:"castudillo@gmail.com",
+        nt:"956110975",
+        ad:"Si"
       }
     },
     methods:{

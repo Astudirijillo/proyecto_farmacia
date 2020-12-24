@@ -17,6 +17,8 @@
         <button type="submit" class="loginButton"><b>Ingresar</b></button>
       </div>
     </form>
+    <br>
+    <h4><i>Ante cualquier problema contactarse con uno de los administradores.</i></h4>
   </div>
 </template>
 
